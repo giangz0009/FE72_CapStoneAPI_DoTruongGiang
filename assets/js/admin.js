@@ -130,7 +130,7 @@ function validate() {
   function checkPrice(
     elementNode,
     errMessNode,
-    messToShow = "* Vui lòng nhập đúng định dạng tiền tệ!"
+    messToShow = "* Vui lòng nhập đúng định dạng tiền tệ $!"
   ) {
     const regex =
       /(USD|EUR|€|\$|£)\s?(\d{1,}(?:[.,]*\d{3})*(?:[.,]*\d*))|(\d{1,3}(?:[.,]*\d*)*(?:[.,]*\d*)?)\s?(USD|EUR|VND|vnd)/;
