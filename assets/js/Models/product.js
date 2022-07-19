@@ -38,7 +38,7 @@ function Product(
               class="product-header__icon-samsung fa-brands fa-galactic-republic"
             ></i>
           </div>
-          <p>In Stock</p>
+          <p>${this.price}</p>
         </header>
         <main class="product-main">
           <div class="product-main__img">
@@ -58,7 +58,7 @@ function Product(
           </div>
         </main>
         <footer class="product-footer">
-          <p class="product-footer__price">${this.price}</p>
+          <p>In Stock</p>
           <button id="addToCart" onclick="addToCart('${this.id}')">Add</button>
           <div class="product-footer__cart-choosing">
                 <button

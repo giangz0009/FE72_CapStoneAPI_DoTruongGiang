@@ -306,11 +306,16 @@ service
       updateAmountCart() {
         // Dom to productAmount
         const productAmount = document.getElementById("productAmount");
-        const totalAmount = this.listCart.reduce((prevCart, currCart) => {
-          return (prevCart += currCart.amount);
-        }, 0);
 
-        productAmount.innerHTML = totalAmount;
+        // ----Get total product in cart
+        // const totalAmount = this.listCart.reduce((prevCart, currCart) => {
+        //   return (prevCart += currCart.amount);
+        // }, 0);
+
+        // Get total product by type in cart
+        const totalProductByType = this.listCart.length;
+
+        productAmount.innerHTML = totalProductByType;
       },
 
       // get Payment List
